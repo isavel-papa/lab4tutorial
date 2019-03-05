@@ -96,6 +96,15 @@
             grid-auto-rows: min-content;
             grid-gap: 1em;
         }
+        .c2-first-row {
+            grid-column: 1/5;
+        }
+
+        .grid-button {
+            padding: 6px 12px;
+            background-color: #ccc;
+            float: right;
+        }
 
         .h2-content {
             /* Makes header span across 5 columns */
@@ -137,7 +146,12 @@
         </div>
         <!-- C2: product gallery grid -->
         <div class="c2">
-             <h2 class="txt-center h2-content">Recent Product</h2>
+            <div class="c2-first-row">
+                 <a
+                <button class="grid-button">Grid View</button>
+            </div>
+               
+             <h2 class="txt-center h2-content">Gallery</h2>
                 <img class="box-shadow" src="./img/1.jpg">
                 <img class="box-shadow" src="./img/2.jpg">
                 <img class="box-shadow" src="./img/3.jpg">
